@@ -6,7 +6,7 @@ namespace VbApi.Controllers;
 public class Employee : IValidatableObject
 {
     [Required]
-    [StringLength(maximumLength: 250, MinimumLength = 10, ErrorMessage = "Invalid Name")]
+    [StringLength(maximumLength: 250, MinimumLength = 10, ErrorMessage = "Name is not valid.")]
     public string Name { get; set; }
 
     [Required] 
